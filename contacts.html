@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<!--
+    Name: Your Name 
+    Date Created: Today's date 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contacts</title>	
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+    </head> 
+    
+    <body>
+        <header>
+            <h2> <em> Contact Me </em></h2>
+			
+			
+			<form action = "submit.html" method = "POST">
+			
+			<hr/>
+        </header>
+            
+        <nav>
+           <a href= "index.html"> Home <a/>
+		   <hr/>
+        </nav>
+       <h2> <p>  <strong> Information Request </strong> </em></p> </h2>
+        
+		
+		<!--
+		First name: <br/>
+		<input type ="text" name = "myTextInput1" required /> <br/>
+		<br/>
+		Last name: <br/>
+		<input type ="text" name = "myTextInput2" required /> <br/>
+		<br/>
+		Phone number:<br/>
+		<input type ="text" name = "myTextInput3" required /> <br/>
+		<br/>
+		-->
+		<label for="firstName">First Name:</label> <br />
+        <input type="text" id="firstName" name="firstName"> <br />
+		<br/>
+		
+		<label for="lastName">Last Name:</label><br />
+        <input type="text" id="lastName" name="lastName"> <br />
+		<br/>
+		
+        <label for="phone">Phone Number:</label><br />
+        <input type="text" id="phone" name="phone"> <br />
+		 
+		<!--
+		Best time to call:
+		<select name = "bestcalltime"> 
+		  <option value = "Morning"> Morning(8am to 12pm Central) </option>
+		  <option value = "Afternoon"> Afternoon(12pm to 5pm Central) </option>
+		  <option value = "Evening"> Evening(5pm to 8pm Central) </option>
+		</select> <br/>
+		
+		<br/>
+		-->
+		
+		<br/>
+		
+		<label for="contact">Best time to call:</label><br />
+        <select id="contact" name="contact"> 
+           <option value="default" selected>--Select One--</option>
+           <option value="morning">Morning (8AM to 12PM Eastern)</option>
+           <option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+           <option value="evening">Evening (5PM to 8PM Eastern)</option>
+        </select>
+		
+		<br/>
+		<br/>
+		<!--
+		I am interested in (check all that apply): <br/>
+		<input type ="checkbox" name = "mychoices" value = "Front-end Web Development" /> Front-end Web Development<br/>
+		<input type ="checkbox" name = "mychoices" value = "Back-end Web Development" /> Back-end Web Development<br/>
+		<input type ="checkbox" name = "mychoices" value = "Database Design" /> Database Design <br/>
+		<br/>
+		
+		
+		I have filled in the client questionnaire form: </br>
+		<input type ="radio" name = "answer" value = "Yes" /> Yes<br/>
+		<input type ="radio" name = "answer" value = "No" /> No<br/>
+		
+		
+		Additional information: <br/>
+		<textarea name ="briefdescriptionofadditionalinformation"> </textarea> <br/>
+		<input type ="submit"/> <input  type = "reset"/> 
+		<br/>
+		-->
+<fieldset>
+<legend>I am interested in (check all that apply):</legend>
+<input type="checkbox" id="frontEnd" name="interest" value="frontEnd"> 
+<label for="frontEnd">Front End Web Development</label><br />
+<input type="checkbox" id="backEnd" name="interest" value="backEnd">
+<label for="backEnd">Back End Web Development</label> <br/>
+<input type="checkbox" id="database" name="interest" value="database">
+<label for="database">Database Design</label><br />
+</fieldset>
+ <br/>
+
+<fieldset>
+<legend>I have filled in the client questionnaire form:</legend>
+<input type="radio" id="choice1" name="questionnaire" value="yes">
+<label for="choice1">Yes</label><br />
+<input type="radio" id="choice2" name="questionnaire" value="no">
+<label for="choice2">No</label><br />
+</fieldset>
+<br/>
+
+
+
+
+<label for="info">Additional Information</label><br />
+<textarea id="info" name="info"></textarea>
+<br/>
+
+<input type="submit" name="submit" value="Submit">
+
+		
+		</form>
+		
+		
+		
+		
+		
+		
+		<script>
+   function Allforms() {
+    var a = document.forms;
+    for (var loopCounter = 0;
+        loopCounter < a.length; loopCounter++) {
+                a.length;
+    }
+}
+
+
+    
+      </script>
+        <footer>
+
+        </footer>
+    </body> 
+</html>
